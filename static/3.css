@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+.container-forma {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  left: 50%;
+}
+.container-forma:hover .top-forma:before, .container-forma:hover .top-forma:after, .container-forma:hover .bottom-forma:before, .container-forma:hover .bottom-forma:after, .container-forma:active .top-forma:before, .container-forma:active .top-forma:after, .container-forma:active .bottom-forma:before, .container-forma:active .bottom-forma:after {
+  margin-left: 200px;
+  transform-origin: -200px 50%;
+  transition-delay: 0s;
+}
+.container-forma:hover .center-forma, .container-forma:active .center-forma {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.top-forma:before, .top-forma:after, .bottom-forma:before, .bottom-forma:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200vmax;
+  height: 200vmax;
+  top: 55%;
+  left: 55%;
+  margin-top: -100vmax;
+  transform-origin: 0 50%;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  z-index: 10;
+  opacity: 0.65;
+  transition-delay: 0.2s;
+}
+
+.top-forma:before {
+  transform: rotate(55.8deg);
+  background: #e46569;
+}
+.top-forma:after {
+  transform: rotate(124.7deg);
+  background: #00a182;
+}
+
+.bottom-forma:before {
+  transform: rotate(-55.8deg);
+  background: #60b8d4;
+}
+.bottom-forma:after {
+  transform: rotate(-124.1deg);
+  background: #3745b5;
+}
+
+.center-forma {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  transition-delay: 0s;
+  color: #333;
+}
+.center-forma .infor {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
