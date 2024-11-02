@@ -7,14 +7,14 @@
 
 .container-forma {
   position: absolute;
-  width: 50%;
+  width:45%;
   height: 100%;
   overflow: hidden;
   left: 50%;
 }
 .container-forma:hover .top-forma:before, .container-forma:hover .top-forma:after, .container-forma:hover .bottom-forma:before, .container-forma:hover .bottom-forma:after, .container-forma:active .top-forma:before, .container-forma:active .top-forma:after, .container-forma:active .bottom-forma:before, .container-forma:active .bottom-forma:after {
-  margin-left: 200px;
-  transform-origin: -200px 50%;
+  margin-left: 300px;
+  transform-origin: -300px 50%;
   transition-delay: 0s;
 }
 .container-forma:hover .center-forma, .container-forma:active .center-forma {
@@ -28,8 +28,8 @@
   position: absolute;
   width: 200vmax;
   height: 200vmax;
-  top: 55%;
-  left: 55%;
+  top: 50%;
+  left: 50%;
   margin-top: -100vmax;
   transform-origin: 0 50%;
   transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
@@ -39,20 +39,20 @@
 }
 
 .top-forma:before {
-  transform: rotate(55.8deg);
+  transform: rotate(57deg);
   background: #e46569;
 }
 .top-forma:after {
-  transform: rotate(124.7deg);
+  transform: rotate(122.9deg);
   background: #00a182;
 }
 
 .bottom-forma:before {
-  transform: rotate(-55.8deg);
+  transform: rotate(-57.1deg);
   background: #60b8d4;
 }
 .bottom-forma:after {
-  transform: rotate(-124.1deg);
+  transform: rotate(-123deg);
   background: #3745b5;
 }
 
